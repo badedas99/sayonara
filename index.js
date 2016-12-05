@@ -15,6 +15,6 @@ if (operationType === "plus") {
   const result = Number(number1) * Number(number2);
 };
 // result shit
-const result = Number(number1) * Number(number2);
+//const result = Number(number1) * Number(number2);
 
-execa.sync('say', [`${number1} mal ${number2} ist nach Adam Riese ${result} ... krank`]);
+execa.sync('say', [`${number1} ${operationType} ${number2} ist nach Adam Riese ${result} ... krank`]);
