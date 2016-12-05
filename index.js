@@ -3,16 +3,16 @@ const execa = require('execa');
 const operationType = process.argv[3]
 const number1 = process.argv[2];
 const number2 = process.argv[4];
-
+let result;
 // calculation shit
 if (operationType === "plus") {
-  const result = Number(number1) + Number(number2);
+  result = Number(number1) + Number(number2);
 } else if (operationType === "minus") {
-  const result = Number(number1) - Number(number2);
+  result = Number(number1) - Number(number2);
 } else if (operationType === "mal") {
-  const result = Number(number1) * Number(number2);
-} else if (operationType === "geteilt") {
-  const result = Number(number1) * Number(number2);
+  result = Number(number1) * Number(number2);
+} else if (operationType === "durch") {
+  result = Number(number1) / Number(number2);
 };
 // result shit
 //const result = Number(number1) * Number(number2);
