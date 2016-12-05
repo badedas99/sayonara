@@ -12,7 +12,8 @@ if (operationType === "plus") {
 } else if (operationType === "mal") {
   result = Number(number1) * Number(number2);
 } else if (operationType === "durch") {
-  result = Number(number1) / Number(number2);
+  const midresult = Number(number1) / Number(number2);
+  result = Math.round(midresult * 100) / 100;
 };
 // result shit
 //const result = Number(number1) * Number(number2);
